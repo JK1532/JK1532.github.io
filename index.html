@@ -12,32 +12,30 @@
     <br>
     采用定制的中文广告录音，其中男声15个小时，女生15个小时，采样率为48kHz,双声道。
     <br>
-    每条广告语音的市场在0~8秒之间。
+    每条广告语音的时长在0~8秒之间。
     <br>
     项目采用Tacotron技术和Wavenet技术进行广告语音合成，合成的广告语音清洗流畅。
     <br>
     项目分别在22.05kHz和48kHz下进行了语音合成。
     <br>
 
+    <h2>Tacotron+Wavenet</h2>
+    <h3>采样率：48kHz  女声</h3>
+    <audio controls="" src="samples/TW_nv48/speech-00005_gen.wav"></audio>
+    与老虎同住是什么感觉？看完我惊呆了！
+    <br>
+    <audio controls="" src="samples/TW_nv48/speech-00007_gen.wav"></audio>
+    这不是特效！冬天的东北：水泼出去瞬间结冰。
+    <br>
+    <audio controls="" src="samples/TW_nv48/speech-00059_gen.wav"></audio>
+    猎场郑秋冬毒舌上线,论口才我只服胡歌
+    <br>
+    <audio controls="" src="samples/TW_nv48/speech-00083_gen.wav"></audio>
+    众将士听令！全军突击！【点击查看】
+    <br>
+ 
 
-    <h3>采样率：48kHz  男声</h3>
-    <audio controls="" src="samples/test.wav"></audio>
-    Low-resolution
-    <br>
-    <audio controls="" src="samples/p226/gt.p226_363.wav"></audio>
-    High-resolution
-    <br>
-    <audio controls="" src="samples/p226/gen.baseline.p226_363.wav"></audio>
-    SR Baseline, Kuleshov et al.
-    <br>
-    <audio controls="" src="samples/p226/gen.pw.cond_mel_pred_hr.p226_363.wav"></audio>
-    SR ParallelWaveNet, condition on log-scale mel-spectrogram of low-resolution audio, directly predict high-resolution audio
-    <br>
-    <audio controls="" src="samples/p226/gen.pw.cond_lr_pred_res.p226_363.wav"></audio>
-    SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
-    <br>
-
-    <h3>Speaker P226: p226_364</h3>
+    <h3>采样率：48kHz 男声</h3>
     <audio controls="" src="samples/p226/lr.p226_364.wav"></audio>
     Low-resolution
     <br>
@@ -50,28 +48,25 @@
     <audio controls="" src="samples/p226/gen.pw.cond_mel_pred_hr.p226_364.wav"></audio>
     SR ParallelWaveNet, condition on log-scale mel-spectrogram of low-resolution audio, directly predict high-resolution audio
     <br>
-    <audio controls="" src="samples/p226/gen.pw.cond_lr_pred_res.p226_364.wav"></audio>
-    SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
-    <br>
  
-    <h3>Speaker P226: p226_365</h3>
-    <audio controls="" src="samples/p226/lr.p226_365.wav"></audio>
-    Low-resolution
+    <h2>Tacotron+Griffith-Lim</h2>
+    <h3>采样率：48kHz 女声</h3>
+    <audio controls="" src="samples/TG_nv48/speech-00005.wav"></audio>
+    与老虎同住是什么感觉？看完我惊呆了！
     <br>
-    <audio controls="" src="samples/p226/gt.p226_365.wav"></audio>
-    High-resolution
+    <audio controls="" src="samples/TG_nv48/speech-00007.wav"></audio>
+    这不是特效！冬天的东北：水泼出去瞬间结冰。
     <br>
-    <audio controls="" src="samples/p226/gen.baseline.p226_365.wav"></audio>
-    SR Baseline, Kuleshov et al.
+    <audio controls="" src="samples/TG_nv48/speech-00059.wav"></audio>
+    猎场郑秋冬毒舌上线,论口才我只服胡歌
     <br>
-    <audio controls="" src="samples/p226/gen.pw.cond_mel_pred_hr.p226_365.wav"></audio>
-    SR ParallelWaveNet, condition on log-scale mel-spectrogram of low-resolution audio, directly predict high-resolution audio
+    <audio controls="" src="samples/TG_nv48/speech-00083.wav"></audio>
+    众将士听令！全军突击！【点击查看】
     <br>
-    <audio controls="" src="samples/p226/gen.pw.cond_lr_pred_res.p226_365.wav"></audio>
-    SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
-    <br>
- 
 
+ 
+    <h2>Tacotron+Wavenet</h2>
+    <h3>采样率：22.05kHz  女声</h3>
     <h3>Speaker P225: p225_355</h3>
     <audio controls="" src="samples/p225/lr.p225_355.wav"></audio>
     Low-resolution

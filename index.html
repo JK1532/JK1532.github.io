@@ -4,7 +4,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>HIT-TTS</title>
 </head>
 <body>
     <h1>面向中文广告的个性化语音合成</h1>
@@ -19,8 +19,8 @@
     项目分别在22.05kHz和48kHz下进行了语音合成。
     <br>
 
-    <h2>Tacotron+Wavenet</h2>
-    <h3>采样率：48kHz  女声</h3>
+    <h2>Tacotron+Wavenet 采样率：48kHz</h2>
+    <h3>女声</h3>
     <audio controls="" src="samples/TW_nv48/speech-00005_gen.wav"></audio>
     与老虎同住是什么感觉？看完我惊呆了！
     <br>
@@ -35,22 +35,22 @@
     <br>
  
 
-    <h3>采样率：48kHz 男声</h3>
-    <audio controls="" src="samples/p226/lr.p226_364.wav"></audio>
+    <h3>男声</h3>
+    <audio controls="" src="samples/TW_man48/speech-00002.wav"></audio>
     Low-resolution
     <br>
-    <audio controls="" src="samples/p226/gt.p226_364.wav"></audio>
+    <audio controls="" src="samples/TW_man48/speech-00006.wav"></audio>
     High-resolution
     <br>
-    <audio controls="" src="samples/p226/gen.baseline.p226_364.wav"></audio>
+    <audio controls="" src="samples/TW_man48/speech-000012.wav"></audio>
     SR Baseline, Kuleshov et al.
     <br>
-    <audio controls="" src="samples/p226/gen.pw.cond_mel_pred_hr.p226_364.wav"></audio>
+    <audio controls="" src="samples/TW_man48/speech-000013.wav"></audio>
     SR ParallelWaveNet, condition on log-scale mel-spectrogram of low-resolution audio, directly predict high-resolution audio
     <br>
  
-    <h2>Tacotron+Griffith-Lim</h2>
-    <h3>采样率：48kHz 女声</h3>
+    <h2>Tacotron+Griffith-Lim 采样率：48kHz</h2>
+    <h3>女声</h3>
     <audio controls="" src="samples/TG_nv48/speech-00005.wav"></audio>
     与老虎同住是什么感觉？看完我惊呆了！
     <br>
@@ -64,27 +64,22 @@
     众将士听令！全军突击！【点击查看】
     <br>
 
- 
-    <h2>Tacotron+Wavenet</h2>
-    <h3>采样率：22.05kHz  女声</h3>
-    <h3>Speaker P225: p225_355</h3>
-    <audio controls="" src="samples/p225/lr.p225_355.wav"></audio>
-    Low-resolution
+
+    <h3>男声</h3>
+    <audio controls="" src="samples/TG_man48/speech-00002.wav"></audio>
+    这不是特效！冬天的东北：水泼出去瞬间结冰。
     <br>
-    <audio controls="" src="samples/p225/gt.p225_355.wav"></audio>
-    High-resolution
+    <audio controls="" src="samples/TG_man48/speech-00006.wav"></audio>
+    这里寒假实习招聘专场，主打名企长期实习，优质实习岗位
     <br>
-    <audio controls="" src="samples/p225/gen.baseline.p225_355.wav"></audio>
-    SR Baseline, Kuleshov et al.
+    <audio controls="" src="samples/TG_man48/speech-00012.wav"></audio>
+    丽星邮轮开启海上四重奏，带你菲律宾日本冲绳两国三地暖冬巡游
     <br>
-    <audio controls="" src="samples/p225/gen.pw.cond_mel_pred_hr.p225_355.wav"></audio>
-    SR ParallelWaveNet, condition on log-scale mel-spectrogram of low-resolution audio, directly predict high-resolution audio
-    <br>
-    <audio controls="" src="samples/p225/gen.pw.cond_lr_pred_res.p225_355.wav"></audio>
-    SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
+    <audio controls="" src="samples/TG_man48/speech-00013.wav"></audio>
+    这些让人泪奔的照片，看过之后你会被生活拥抱！
     <br>
 
-    <h3>Speaker P225: p225_356</h3>
+    <h2>WaveNet</h2>
     <audio controls="" src="samples/p225/lr.p225_356.wav"></audio>
     Low-resolution
     <br>
@@ -100,24 +95,5 @@
     <audio controls="" src="samples/p225/gen.pw.cond_lr_pred_res.p225_356.wav"></audio>
     SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
     <br>
-
-    <h3>Speaker P225: p225_357</h3>
-    <audio controls="" src="samples/p225/lr.p225_357.wav"></audio>
-    Low-resolution
-    <br>
-    <audio controls="" src="samples/p225/gt.p225_357.wav"></audio>
-    High-resolution
-    <br>
-    <audio controls="" src="samples/p225/gen.baseline.p225_357.wav"></audio>
-    SR Baseline, Kuleshov et al.
-    <br>
-    <audio controls="" src="samples/p225/gen.pw.cond_mel_pred_hr.p225_357.wav"></audio>
-    SR ParallelWaveNet, condition on log-scale mel-spectrogram of low-resolution audio, directly predict high-resolution audio
-    <br>
-    <audio controls="" src="samples/p225/gen.pw.cond_lr_pred_res.p225_357.wav"></audio>
-    SR ParallelWaveNet, directly condition on low-resolution audio, predict residual signal
-    <br>
-
-
 
 </body></html>
